@@ -27,4 +27,8 @@ angular.module('myApp.view1', ['ngRoute', 'services'])
     function init() {
         vm.items = ItemService.getItems();
     }
+
+    function viewItem(item) {
+        console.log('viewing item: id ' + item.id);
+    }
 }]);
