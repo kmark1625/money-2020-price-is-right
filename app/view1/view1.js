@@ -5,18 +5,19 @@ angular.module('myApp.view1', ['ngRoute', 'services'])
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/view1', {
     templateUrl: 'view1/view1.html',
-    controller: 'View1Ctrl'
+    controller: 'View1Ctrl as vm'
   });
 }])
 
-.controller('View1Ctrl', [function(itemService) {
+.controller('View1Ctrl', ['ItemService', function(ItemService) {
     var vm = this;
 
     // methods
     vm.init = init;
+    vm.viewItem = viewItem;
 
     // properties
-    vm.itemService = itemService;
+    vm.itemService = ItemService;
     vm.items = [];
 
     // activate
@@ -24,7 +25,6 @@ angular.module('myApp.view1', ['ngRoute', 'services'])
 
     // method definitions
     function init() {
-        console.log('items:');
-        console.log(vm.items);
+        vm.items = ItemService.getItems();
     }
 }]);
