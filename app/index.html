@@ -24,10 +24,11 @@
         <div ng-view></div>
 
         <pageslide ps-open="vm.itemService.checked" ps-side="left"
-            <div style="height: 100%; background-color: #DA667B">
+            <div style="height: 100%; background-color: #DA667B"
+            ng-click="vm.itemService.toggleChecked()">
                 <ul class="menu-nav" style="list-style: none; color: white; margin-top: 30%;
                 margin-left: 15px; font-size: 18px">
-                    <li class="selected">Catalog</li>
+                    <a href="#!/view1.html"><li class="selected">Catalog</li></a>
                     <li>My Bids</li>
                     <li>Sell An Item</li>
                     <li>Inbox</li>
