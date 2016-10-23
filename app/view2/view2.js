@@ -32,7 +32,7 @@ angular.module('myApp.view2', ['ngRoute', 'services', 'ui.bootstrap'])
     function bid() {
         vm.bidModal = $uibModal.open({
             templateUrl: 'view2/bidModal.html',
-            controller: 'View2Ctrl'
+            controller: 'View2Ctrl as vm'
         })
     }
 
@@ -53,6 +53,6 @@ angular.module('myApp.view2', ['ngRoute', 'services', 'ui.bootstrap'])
     }
 
     function buyItem(price) {
-        vm.paymentService.buyItem;
+        vm.paymentService.buyItem(price);
     }
 }]);

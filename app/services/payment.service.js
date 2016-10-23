@@ -12,7 +12,6 @@
         paymentService.buyItem = buyItem;
 
         function buyItem(amount) {
-            console.log('hello');
             $http({
                 method: 'POST',
                 url: 'http://pir2020.azurewebsites.net/buyitem/' + amount,
