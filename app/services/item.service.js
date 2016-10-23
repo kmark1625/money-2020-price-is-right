@@ -24,7 +24,7 @@
                 {
                     "id": 2,
                     "name": "REI 401 Daypack",
-                    "src": "assets/item1.jpg",
+                    "src": "assets/item2.jpg",
                     "time": "1h 15m",
                     "rating": 4
                 },
@@ -38,7 +38,7 @@
                 {
                     "id": 4,
                     "name": "The North Face Artic Down Parka",
-                    "src": "assets/item1.jpg",
+                    "src": "assets/item2.jpg",
                     "time": "1d 13h",
                     "rating": 4
                 },
@@ -52,7 +52,7 @@
                 {
                     "id": 6,
                     "name": "Bicycle",
-                    "src": "assets/item1.jpg",
+                    "src": "assets/item2.jpg",
                     "time": "5h 10m",
                     "rating": 5
                 }
