@@ -1,15 +1,16 @@
 <div ng-include="'../top-nav/top-nav.html'">
 </div>
-
-<img src="{{vm.item.src}}" style="height: 200px; width: 200px">
-<h1>{{vm.item.name}}</h1>
-<span>
-    <h2>{{vm.item.time}}</h2>
-    <h2>rating: {{vm.item.rating}}</h2>
-</span>
-<p>Item description here.  This is a beautiful iPhone 6 with a lot of cool stuff
-here</p>
-<span>
-    <button class="btn btn-primary">Bid</button>
-    <button class="btn btn-primary">Guess</button>
-</span>
+<div class="item-detail">
+    <img src="{{vm.item.src}}" style="height: 200px; width: 200px"
+    class="img">
+    <h1 class="item-name">{{vm.item.name}}</h1>
+    <span>
+        <h2 class="item-time">{{vm.item.time}}</h2>
+        <h2 class="item-time">rating: {{vm.item.rating}}</h2>
+    </span>
+    <p class="item-description">Item description here.  This is a beautiful iPhone 6 with a lot of cool stuff here</p>
+    <span style="margin-left: 35%;">
+        <button class="btn btn-primary">Bid</button>
+        <button class="btn btn-primary">Guess</button>
+    </span>
+</div>

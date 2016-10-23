@@ -1,11 +1,13 @@
 <div ng-include="'../top-nav/top-nav.html'">
 </div>
 
-<div class="row">
-    <div ng-repeat="item in vm.items" class="col-xs-6"
-    ng-click='vm.viewItem(item)'>
-        <img src="{{item.src}}" style="height: 150px; width: 150px"> 
-        <h1 class="item-name">{{item.name}}</h1>
-        <h2 class="time-remaining">{{item.time}}</h2>
+<div class="item-list">
+    <div class="row">
+        <div ng-repeat="item in vm.items" class="col-xs-6"
+        ng-click='vm.viewItem(item)'>
+            <img src="{{item.src}}" style="height: 150px; width: 150px"> 
+            <h1 class="item-name">{{item.name}}</h1>
+            <h2 class="time-remaining">{{item.time}}</h2>
+        </div>
     </div>
 </div>
