@@ -11,6 +11,9 @@
         itemService.getItems = getItems;
         itemService.getItem = getItem;
 
+        // Properties
+        itemService.checked = false;
+
         function getItems() {
         
             return [

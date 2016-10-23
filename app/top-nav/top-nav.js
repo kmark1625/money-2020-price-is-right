@@ -1,10 +1,10 @@
 (function() {
-    angular.module('top-nav', ['ui.bootstrap', 'side-nav'])
+    angular.module('top-nav', ['ui.bootstrap', 'side-nav', 'pageslide-directive', 'services'])
         .controller('TopNavController', TopNavController);
   
-    TopNavController.$inject = ['$location'];
+    TopNavController.$inject = ['$location', 'ItemService'];
 
-    function TopNavController($location) {
+    function TopNavController($location, ItemService) {
         var vm = this;
 
         // Methods
@@ -23,6 +23,7 @@
         }
 
         function openSideNav() {
+            ItemService.checked = ItemService.checked? false: true;
         }
 
         function openGraph() {
