@@ -1,0 +1,37 @@
+(function() {
+    angular.module('services')
+        .factory('PaymentService', PaymentService)
+
+
+    PaymentService.$inject = ['$http'];
+
+    function PaymentService($http) {
+        var paymentService = {};
+
+        // Methods
+        paymentService.buyItem = buyItem;
+
+        function buyItem() {
+            console.log('hello')
+            var amount = 5000
+
+            $http({
+                method: 'POST',
+                url: 'http://localhost:3000/buyitem/' + amount,
+                //data: amount,
+                //headers: {'Content-Type' : 'application/json'}
+            }).then(function successCallback(response) {
+                // this callback will be called asynchronously
+                // when the response is available
+                console.log(JSON.stringify(response));
+
+            }, function errorCallback(response) {
+                // called asynchronously if an error occurs
+                // or server returns response with an error status.
+                console.log(JSON.stringify(response));
+            });
+        }
+
+        return paymentService;
+    }
+})();
