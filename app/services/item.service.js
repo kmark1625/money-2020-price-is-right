@@ -10,6 +10,10 @@
         // Methods
         itemService.getItems = getItems;
         itemService.getItem = getItem;
+        itemService.toggleChecked = toggleChecked;
+
+        // Properties
+        itemService.checked = false;
 
         function getItems() {
         
@@ -68,6 +72,10 @@
 
         function getItem(id) {
             return itemService.getItems()[id-1];
+        }
+
+        function toggleChecked() {
+            itemService.checked = itemService.checked? false : true;
         }
 
         return itemService;
