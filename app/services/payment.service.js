@@ -17,7 +17,7 @@
 
             $http({
                 method: 'POST',
-                url: 'http://localhost:3000/buyitem/' + amount,
+                url: 'http://pir2020.azurewebsites.net/buyitem/' + amount,
                 //data: amount,
                 //headers: {'Content-Type' : 'application/json'}
             }).then(function successCallback(response) {
