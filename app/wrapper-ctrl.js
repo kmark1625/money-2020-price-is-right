@@ -1,10 +1,10 @@
 (function() {
-    angular.module('top-nav', ['ui.bootstrap', 'side-nav', 'pageslide-directive', 'services'])
-        .controller('TopNavController', TopNavController);
+    angular.module('wrapper', ['ui.bootstrap', 'side-nav', 'pageslide-directive', 'services'])
+        .controller('WrapperController', WrapperController);
   
-    TopNavController.$inject = ['$location', 'ItemService'];
+    WrapperController.$inject = ['$location', 'ItemService'];
 
-    function TopNavController($location, ItemService) {
+    function WrapperController($location, ItemService) {
         var vm = this;
 
         // Methods
