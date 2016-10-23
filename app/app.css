@@ -70,14 +70,29 @@
   padding: 15px;
 }
 .circle-button-left {
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
   background-color: #ED2BA8;
   border-radius: 50%;
+  display: inline-block;
+  margin-right: 40px;
+}
+.circle-button-left p {
+  position: relative;
+  top: 24px;
+  left: 26px;
+  font-weight: bold;
 }
 .circle-button-right {
-  width: 100px;
-  height: 100px;
+  display: inline-block;
+  width: 75px;
+  height: 75px;
   background-color: #734BEE;
   border-radius: 50%;
+}
+.circle-button-right p {
+  position: relative;
+  top: 24px;
+  left: 15px;
+  font-weight: bold;
 }
