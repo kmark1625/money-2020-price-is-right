@@ -99,3 +99,9 @@
 .gradient-background {
   background: linear-gradient(#DA667B, white);
 }
+.selected {
+  color: #BB475C;
+}
+.menu-nav li {
+  margin-bottom: 5px;
+}
