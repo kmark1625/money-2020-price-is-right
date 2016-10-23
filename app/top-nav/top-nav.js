@@ -2,9 +2,9 @@
     angular.module('top-nav', ['ui.bootstrap', 'side-nav'])
         .controller('TopNavController', TopNavController);
   
-    TopNavController.$inject = [];
+    TopNavController.$inject = ['$location'];
 
-    function TopNavController() {
+    function TopNavController($location) {
         var vm = this;
 
         // Methods
@@ -26,7 +26,7 @@
         }
 
         function openGraph() {
-            console.log('opening graph');
+            $location.url('view3');
         }
     }
 })()
