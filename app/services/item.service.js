@@ -37,7 +37,7 @@
                 {
                     "id": 3,
                     "name": "Delta 14 Kayak with Rudder",
-                    "src": "assets/item3.jpg",
+                    "src": "assets/item3.png",
                     "description": "Weighing in at a sleek 45 lbs., the Delta 14 Kayak with Rudder from Delta Kayaks delivers speed and stability and offers tons of gear storage for weekend trips and extended tours.",
                     "time": "2d 20h",
                     "rating": 5
@@ -45,7 +45,7 @@
                 {
                     "id": 4,
                     "name": "The North Face Artic Down Parka",
-                    "src": "assets/item4.jpg",
+                    "src": "assets/item4.png",
                     "description": "HyVent® coating that delivers cold- and wet-weather protection. Insulated with 550-fill-power down to ensure warmth. Hood is removable.",
                     "time": "1d 13h",
                     "rating": 4
@@ -53,7 +53,7 @@
                 {
                     "id": 5,
                     "name": "New Balance 860v6",
-                    "src": "assets/item5.jpg",
+                    "src": "assets/item5.png",
                     "description": "Now you can have both the stability you need from a running shoe and the style you crave for off-days or post-run.",
                     "time": "1d 5h",
                     "rating": 3
@@ -61,7 +61,7 @@
                 {
                     "id": 6,
                     "name": "2017 Windsor Wellington 2.0",
-                    "src": "assets/item6.jpg",
+                    "src": "assets/item6.png",
                     "description": "A high level of engineering and attention to detail is seen on all Windsor road bikes.",
                     "time": "5h 10m",
                     "rating": 5
