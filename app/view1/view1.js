@@ -26,7 +26,7 @@ angular.module('myApp.view1', ['ngRoute', 'services', 'top-nav'])
     // method definitions
     function init() {
         vm.items = ItemService.getItems();
-        PaymentService.buyItem();
+        //PaymentService.buyItem(); Put this where users can pay for an item
     }
 
     function viewItem(item) {
