@@ -9,7 +9,7 @@ angular.module('myApp.view1', ['ngRoute', 'services'])
   });
 }])
 
-.controller('View1Ctrl', ['ItemService', function(ItemService) {
+.controller('View1Ctrl', ['ItemService', '$location', function(ItemService, $location) {
     var vm = this;
 
     // methods
@@ -29,6 +29,6 @@ angular.module('myApp.view1', ['ngRoute', 'services'])
     }
 
     function viewItem(item) {
-        console.log('viewing item: id ' + item.id);
+        $location.url('view2/' + item.id);
     }
 }]);
