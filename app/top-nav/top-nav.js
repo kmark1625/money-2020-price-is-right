@@ -1,11 +1,32 @@
-angular.module('nav', [])
-  .controller('TopNavController', []);
+(function() {
+    angular.module('top-nav', ['ui.bootstrap', 'side-nav'])
+        .controller('TopNavController', TopNavController);
   
-function TopNavController() {
-    var vm = this;
+    TopNavController.$inject = [];
 
-    // methods
-    //
+    function TopNavController() {
+        var vm = this;
 
-    //init
-}
+        // Methods
+        vm.init = init;
+        vm.openSideNav = openSideNav;
+        vm.openGraph = openGraph;
+        vm.openSideNav = openSideNav
+
+        // Properties
+
+        // Init
+        vm.init()
+
+        // Method Definitions
+        function init() {
+        }
+
+        function openSideNav() {
+        }
+
+        function openGraph() {
+            console.log('opening graph');
+        }
+    }
+})()

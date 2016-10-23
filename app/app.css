@@ -21,6 +21,28 @@
 .top-menu {
   border-bottom: 1px solid red;
 }
-.top-menu h1 {
+.top-menu .title {
   text-align: center;
+  font-family: roboto;
+  font-size: 16px;
+  position: relative;
+  bottom: 10px;
+  color: red;
+}
+.top-menu .nav-icon {
+  width: 50px;
+  height: 50px;
+}
+.item-name {
+  font-family: roboto;
+  font-size: 12px;
+  text-align: center;
+  font-weight: bold;
+}
+.time-remaining {
+  font-family: roboto;
+  font-size: 12px;
+  color: gray;
+  text-align: center;
+  font-weight: bold;
 }

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('myApp.view1', ['ngRoute', 'services'])
+angular.module('myApp.view1', ['ngRoute', 'services', 'top-nav'])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/view1', {
