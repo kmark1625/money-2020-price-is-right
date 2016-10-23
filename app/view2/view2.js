@@ -18,6 +18,7 @@ angular.module('myApp.view2', ['ngRoute', 'services', 'ui.bootstrap'])
     vm.getItem = getItem;
     vm.guess = guess;
     vm.buyItem = buyItem;
+    vm.guessItem = guessItem;
 
     // Properties
     vm.itemId;
@@ -54,5 +55,9 @@ angular.module('myApp.view2', ['ngRoute', 'services', 'ui.bootstrap'])
 
     function buyItem(price) {
         vm.paymentService.buyItem(price);
+    }
+
+    function guessItem(price) {
+        vm.paymentService.payUser(price/10);
     }
 }]);
