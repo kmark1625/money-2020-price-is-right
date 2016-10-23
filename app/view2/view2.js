@@ -9,7 +9,7 @@ angular.module('myApp.view2', ['ngRoute', 'services', 'ui.bootstrap'])
   });
 }])
 
-.controller('View2Ctrl', ['$routeParams', 'ItemService', '$uibModal', function($routeParams, ItemService, $uibModal) {
+.controller('View2Ctrl', ['$routeParams', 'ItemService', '$uibModal', 'PaymentService', function($routeParams, ItemService, $uibModal, PaymentService) {
     var vm = this;
 
     // Methods
@@ -17,18 +17,19 @@ angular.module('myApp.view2', ['ngRoute', 'services', 'ui.bootstrap'])
     vm.init = init;
     vm.getItem = getItem;
     vm.guess = guess;
+    vm.buyItem = buyItem;
 
     // Properties
     vm.itemId;
     vm.item = {};
     vm.itemService = ItemService;
+    vm.paymentService = PaymentService;
 
     // Init
     vm.init();
     
     // Method Definitions
     function bid() {
-        console.log('bid!');
         vm.bidModal = $uibModal.open({
             templateUrl: 'view2/bidModal.html',
             controller: 'View2Ctrl'
@@ -36,10 +37,9 @@ angular.module('myApp.view2', ['ngRoute', 'services', 'ui.bootstrap'])
     }
 
     function guess() {
-        console.log('guess');
         vm.guessModal = $uibModal.open({
             templateUrl: 'view2/guessModal.html',
-            controller: 'View2Ctrl'
+            controller: 'View2Ctrl as vm'
         })
     }
 
@@ -50,5 +50,9 @@ angular.module('myApp.view2', ['ngRoute', 'services', 'ui.bootstrap'])
 
     function getItem(itemId) {
         return vm.itemService.getItem(itemId);
+    }
+
+    function buyItem(price) {
+        vm.paymentService.buyItem;
     }
 }]);
