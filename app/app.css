@@ -19,7 +19,7 @@
   padding-right: 0.3em;
 }
 .top-menu {
-  border-bottom: 1px solid red;
+  border-bottom: 3px solid #DA667B;
 }
 .top-menu .title {
   text-align: center;
@@ -27,11 +27,14 @@
   font-size: 16px;
   position: relative;
   bottom: 10px;
-  color: red;
+  color: #DA667B;
 }
 .top-menu .nav-icon {
   width: 50px;
   height: 50px;
+}
+.item-list {
+  padding: 10px;
 }
 .item-list .item-name {
   font-family: roboto;
@@ -65,4 +68,16 @@
   color: gray;
   font-size: 16px;
   padding: 15px;
+}
+.circle-button-left {
+  width: 100px;
+  height: 100px;
+  background-color: #ED2BA8;
+  border-radius: 50%;
+}
+.circle-button-right {
+  width: 100px;
+  height: 100px;
+  background-color: #734BEE;
+  border-radius: 50%;
 }
